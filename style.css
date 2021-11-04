@@ -72,10 +72,11 @@ section {
 }
 
 .storage {
+    z-index: 1;
     float: right;
     position: relative;
     left: 200px;
-    top: 215px;
+    top: 255px;
     width: 400px;
     height: 75px;
     padding: 35px;
@@ -84,6 +85,50 @@ section {
     border-radius: 7px;
 }
 
-.prog-bar {
-    width: 250px;
+ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+ul>li>p.bottom-txt1 {
+    position: relative;
+    right: 33px;
+}
+
+ul>li>p.bottom-txt2 {
+    margin-left: 270px;
+}
+
+.progress {
+    width: 75%;
+    height: 10px;
+    border-radius: 20px;
+    padding: 3px;
+    background: var(--gradient);
+    border: 2px solid var(--very-dark-blue);
+}
+
+.progress:before {
+    z-index: -1;
+    position: relative;
+    bottom: 5px;
+    left: 285px;
+    width: 35%;
+    height: 100%;
+    border-radius: 0px 20px 20px 0px;
+    padding: 5px;
+    background: var(--very-dark-blue);
+    display: block;
+    content: '';
+}
+
+.prog-circle {
+    position: relative;
+    bottom: 61.5px;
+    left: 293px;
+    width: 3%;
+    height: 14px;
+    background: var(--gale-blue);
+    border-radius: 100px;
 }
