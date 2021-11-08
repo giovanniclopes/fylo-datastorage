@@ -37,6 +37,14 @@ section {
     display: flex;
 }
 
+@media only screen and (max-width: 600px) {
+    section {
+        display: inline;
+        
+    }
+}
+
+
 .fylo {
     float: left;
     position: relative;
@@ -48,6 +56,15 @@ section {
     border-radius: 7px 90px 7px 7px;
 }
 
+@media only screen and (max-width: 600px) {
+    .fylo {
+        float: none;
+        left: 40px;
+        width: 300px;
+        height: 170px;
+    }
+}
+
 .fylo>img {
     margin-top: 20px;
     margin-right: 8px;
@@ -55,6 +72,8 @@ section {
     border-radius: 7px;
     
 }
+
+
 
 .doc-img {
     margin-left: 30px;
@@ -71,6 +90,8 @@ section {
     margin-left: 20px;
 }
 
+/* second element */
+
 .storage {
     z-index: 1;
     float: right;
@@ -83,6 +104,17 @@ section {
     background: var(--dark-blue);
     font-size: 14px;
     border-radius: 7px;
+}
+
+@media only screen and (max-width: 600px) {
+    .storage {
+        width: 250px;
+        height: 100px;
+        padding: 50px;
+        float: none;
+        left: 40px;
+        padding: 25px;
+    }
 }
 
 ul {
@@ -100,6 +132,13 @@ ul>li>p.bottom-txt2 {
     margin-left: 270px;
 }
 
+@media only screen and (max-width: 600px) {
+    ul>li>p.bottom-txt2 {
+        margin-left: 120px;
+        
+    }
+}
+
 .progress {
     width: 75%;
     height: 10px;
@@ -109,7 +148,7 @@ ul>li>p.bottom-txt2 {
     border: 2px solid var(--very-dark-blue);
 }
 
-.progress:before {
+.progress::before {
     z-index: -1;
     position: relative;
     bottom: 5px;
@@ -123,6 +162,14 @@ ul>li>p.bottom-txt2 {
     content: '';
 }
 
+@media only screen and (max-width: 600px) {
+    .progress::before {
+        left: 170px;
+        
+    }
+}
+
+
 .prog-circle {
     position: relative;
     bottom: 61.5px;
@@ -131,4 +178,13 @@ ul>li>p.bottom-txt2 {
     height: 14px;
     background: var(--gale-blue);
     border-radius: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+    .prog-circle {
+        left: 180px;
+        bottom: 60px;
+        width: 4.5%;
+        height: 11px;
+    }
 }
